@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# ths is a bash script to print running instances from aws account
+aws ec2 describe-instances  --query 'Reservations[*].Instances[*].PublicIpAddress'
